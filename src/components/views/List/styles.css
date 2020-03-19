@@ -1,0 +1,17 @@
+.active {
+  color: green;
+}
+
+li {
+  cursor: pointer;
+}
+
+ul {
+  max-height: 400px;
+  overflow: auto;
+  width: 30%;
+}
+
+.list--container {
+  padding: 5%;
+}
