@@ -7,7 +7,6 @@ const ImageContainerView = () => {
   const { activeListItem, list } = useContext(Context.Consumer);
   const item = list.find((listItem) => listItem.id === activeListItem);
   const { loading, data } = useFetch(item.name);
-  console.log(loading, data);
   if (loading) {
     return (
       <>

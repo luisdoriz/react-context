@@ -21,7 +21,6 @@ const ListView = () => {
         <ul>
           {list.map((listItem) =>
             <ListItem
-              active={listItem.id === activeListItem}
               item={listItem}
             />
           )}

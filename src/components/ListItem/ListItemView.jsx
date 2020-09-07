@@ -3,16 +3,15 @@ import React, { useContext } from 'react';
 import Context from '../../Context';
 
 const ListItemView = ({
-  active,
   item,
 }) => {
-  const { setActiveListItem } = useContext(Context.Consumer);
+  const { setActiveListItem,  activeListItem } = useContext(Context.Consumer);
   return (
     <li
       onClick={() => setActiveListItem(item.id)}
     >
       <h2
-        className={active && 'active'}
+        className={activeListItem === item.id && 'active'}
         key={item.id}
       >
         {item.name}
