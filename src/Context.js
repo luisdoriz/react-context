@@ -9,7 +9,6 @@ const Context = createContext();
 const Provider = ({ children }) => {
   const [list, dispatchList] = useReducer(listReducer, listInitialState);
   const [activeListItem, setActiveListItem] = useState(2);
-  console.log(list);
   const value = {
     list,
     dispatchList,

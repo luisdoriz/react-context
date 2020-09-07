@@ -1,0 +1,23 @@
+
+.list-container {
+  padding: 10%;
+  display: grid;
+  grid-template-columns: 30% 40% 20%;
+  .active {
+    color: green;
+  }
+  
+  li {
+    cursor: pointer;
+  }
+  
+  ul {
+    max-height: 500px;
+    overflow: auto;
+  }
+  
+  img {
+    width: 100%;
+  }
+
+}

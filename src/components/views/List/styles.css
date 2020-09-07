@@ -1,17 +1,13 @@
-.active {
-  color: green;
-}
-
-li {
-  cursor: pointer;
-}
-
-ul {
-  max-height: 400px;
-  overflow: auto;
-  width: 30%;
-}
-
-.list--container {
-  padding: 5%;
-}
+.list-container {
+  padding: 10%;
+  display: grid;
+  grid-template-columns: 30% 40% 20%; }
+  .list-container .active {
+    color: green; }
+  .list-container li {
+    cursor: pointer; }
+  .list-container ul {
+    max-height: 500px;
+    overflow: auto; }
+  .list-container img {
+    width: 100%; }

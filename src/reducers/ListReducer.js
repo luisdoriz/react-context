@@ -22,7 +22,6 @@ export const listReducer = (state, action) => {
     case 'add':
       const id = state[state.length - 1].id + 1;
       action.payload.id = id;
-      console.log([...state, action.payload])
       return [...state, action.payload];
     case 'delete':
       const updatedState = state;
